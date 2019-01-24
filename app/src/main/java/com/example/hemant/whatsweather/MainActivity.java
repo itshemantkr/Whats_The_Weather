@@ -66,12 +66,11 @@ public class MainActivity extends AppCompatActivity {
                     result += (char) data;
                     data = reader.read();
                 }
-                return result;
-            }catch (Exception e){
-                Toast.makeText(getApplicationContext(), "Could not Find Weather", Toast.LENGTH_LONG).show();
-                return null;
-            }
 
+            }catch (Exception e){
+                //Toast.makeText(getApplicationContext(), "Could not Find Weather", Toast.LENGTH_LONG).show();
+            }
+            return result;
         }
 
         @Override
